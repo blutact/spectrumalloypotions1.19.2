@@ -1,6 +1,6 @@
 {
   "parent": "block/cube_all",
   "textures": {
-    "all": "spectrumalloypotions:block/bedrockium_crystal_block"
+    "all": "spectrum-alloy-potions:block/bedrockium_crystal_block"
   }
 }

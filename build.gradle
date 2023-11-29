@@ -16,63 +16,10 @@ repositories {
 	// Loom adds the essential maven repositories to download Minecraft and libraries from automatically.
 	// See https://docs.gradle.org/current/userguide/declaring_repositories.html
 	// for more information about repositories.
-	mavenLocal()
-	maven { url 'https://jitpack.io' }
-	maven { url "https://maven.shedaniel.me/" }
-	maven {
-		name = "TerraformersMC"
-		url = "https://maven.terraformersmc.com/"
-	}
-	maven { url "https://maven.nucleoid.xyz/" }
-	/*maven {
-		name = "Enchantment Descriptions"
-		url = 'https://maven.blamejared.com'
-	}*/
-	maven {
-		name = "Patchouli" // https://github.com/Vazkii/Patchouli
-		url = 'https://maven.blamejared.com'
-	}
-	maven {
-		name = "Ladysnake Libs"
-		url = 'https://maven.ladysnake.org/releases'
-	}
-	maven {
-		name = "entity reach attribute"
-		url = "https://maven.jamieswhiteshirt.com/libs-release/"
-	}
-	maven { url 'https://maven.wispforest.io/' } // owo lib
-	maven { url 'https://jitpack.io' }
-	maven {
-		name = "ProgrammerArtInjector"
-		url = 'https://maven.extracraftx.com'
-	}
-	exclusiveContent {
-		forRepository {
-			maven {
-				name = "Modrinth"
-				url = "https://api.modrinth.com/maven"
-			}
-		}
-		filter {
-			includeGroup "maven.modrinth"
-		}
-	}
-	maven {
-		name = "Curse"
-		url = 'https://cfa2.cursemaven.com'
-	}
-	maven {
-		name = "Ears"
-		url "https://repo.unascribed.com"
-		content {
-			includeGroup "com.unascribed"
-		}
-	}
-	mavenCentral()
 }
 
 loom {
-    runs {
+	runs {
 		// This adds a new gradle task that runs the datagen API: "gradlew runDatagen"
 		datagen {
 			inherit server
@@ -80,7 +27,7 @@ loom {
 			vmArg "-Dfabric-api.datagen"
 			vmArg "-Dfabric-api.datagen.output-dir=${file("src/main/generated")}"
 			vmArg "-Dfabric-api.datagen.modid=spectrum-alloy-potions"
- 
+
 			runDir "build/datagen"
 		}
 	}
@@ -105,29 +52,10 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	// Spectrum
-	modImplementation "maven.modrinth:spectrum:${project.spectrum_version}"
-	modImplementation "maven.modrinth:Revelationary:${project.revelationary_version}"
-	modImplementation include("com.github.DaFuqs:Arrowhead:${project.arrowhead_version}")
-	modApi("me.shedaniel.cloth:cloth-config-fabric:${project.cloth_config_version}"){
-		exclude(group: "net.fabricmc.fabric-api")
-	}
-	modImplementation include("maven.modrinth:AdditionalEntityAttributes:${project.additional_entity_attributes_version}")
-	modImplementation include("com.github.devs-immortal:Incubus-Core:${project.incubus_core_version}")
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-base:${project.cca_version}")
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-entity:${project.cca_version}")
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-item:${project.cca_version}")
-	modImplementation include("dev.onyxstudios.cardinal-components-api:cardinal-components-level:${project.cca_version}")
-	modApi("com.terraformersmc:modmenu:${project.modmenu_version}")
-	modImplementation "vazkii.patchouli:Patchouli:${project.patchouli_version}"
-	modImplementation "io.wispforest:owo-lib:${project.owo_version}"
+	// Uncomment the following line to enable the deprecated Fabric API modules.
+	// These are included in the Fabric API production distribution and allow you to update your mod to the latest modules at a later more convenient time.
 
-	// Actual other dependencies
-	modImplementation "maven.modrinth:trinkets:${project.trinkets_version}"
-
-	implementation("com.github.LlamaLad7:MixinExtras:${project.mixin_extras_version}")
-	annotationProcessor("com.github.LlamaLad7:MixinExtras:${project.mixin_extras_version}")
-
+	// modImplementation "net.fabricmc.fabric-api:fabric-api-deprecated:${project.fabric_version}"
 }
 
 processResources {
