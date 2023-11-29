@@ -2,15 +2,19 @@
   "type": "alloy_forgery:forging",
   "inputs": [
     {
-      "id": "spectrum:citrine_shard",
+      "item": "spectrum:bedrock_storage_block",
+      "count": 1
+    },
+    {
+      "item": "spectrum:citrine_shard",
       "count": 64
     },
-	{
-      "id": "spectrum:topaz_shard",
+    {
+      "item": "spectrum:topaz_shard",
       "count": 64
     },
-	{
-      "id": "minecraft:amethyst_shard",
+    {
+      "item": "minecraft:amethyst_shard",
       "count": 64
     }
   ],
