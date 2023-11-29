@@ -1,5 +1,6 @@
 package blutact.spectrumalloypotions;
 
+import blutact.spectrumalloypotions.block.ModBlocks;
 import blutact.spectrumalloypotions.item.ModItems;
 import net.fabricmc.api.ModInitializer;
 
@@ -14,5 +15,6 @@ public class SpectrumAlloyPotions implements ModInitializer {
 	public void onInitialize() {
 		LOGGER.info("Initializing SpectrumAlloyPotions!");
 		ModItems.registerModItems();
+		ModBlocks.registerModBlocks();
 	}
 }
