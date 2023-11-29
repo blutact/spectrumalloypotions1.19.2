@@ -1,0 +1,23 @@
+{
+  "type": "alloy_forgery:forging",
+  "inputs": [
+    {
+      "id": "spectrum:citrine_shard",
+      "count": 64
+    },
+	{
+      "id": "spectrum:topaz_shard",
+      "count": 64
+    },
+	{
+      "id": "minecraft:amethyst_shard",
+      "count": 64
+    }
+  ],
+  "output": {
+    "id": "spectrum-alloy-potions:bedrockium_crystal_block",
+    "count": 1
+  },
+  "min_forge_tier": 3,
+  "fuel_per_tick": 15
+}
