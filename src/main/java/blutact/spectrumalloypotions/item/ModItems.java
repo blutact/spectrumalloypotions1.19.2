@@ -15,7 +15,10 @@ import net.minecraft.util.registry.Registry;
 
 public class ModItems {
     public static final Item BEDROCKIUM_CRYSTAL = registerItem("bedrockium_crystal",
-            new Item(new FabricItemSettings().group(ItemGroup.BREWING)));
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+
+    public static final Item BEDROCKIUM_CRYSTAL_POWDER = registerItem("bedrockium_crystal_powder",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item BEDROCKIUM_CANDY = registerItem("bedrockium_candy",
             new Item(new FabricItemSettings().group(ItemGroup.FOOD).food(new FoodComponent.Builder().alwaysEdible()

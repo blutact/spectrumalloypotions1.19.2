@@ -1,0 +1,15 @@
+{
+  "type": "spectrum:anvil_crushing",
+  "ingredient": {
+    "item": "spectrum-alloy-potions:bedrockium_crystal"
+  },
+  "crushedItemsPerPointOfDamage": 2,
+  "experience": 100.0,
+  "result" : {
+    "item": "spectrum-alloy-potions:bedrockium_crystal_powder",
+    "count": 1
+  },
+  "particleEffectIdentifier": "lava",
+  "particleCount": 3,
+  "soundEventIdentifier": "block.stone.break"
+}
