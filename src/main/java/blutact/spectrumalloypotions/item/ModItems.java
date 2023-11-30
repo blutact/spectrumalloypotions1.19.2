@@ -23,7 +23,7 @@ public class ModItems {
                     .statusEffect(new StatusEffectInstance(StatusEffects.ABSORPTION, 250, 4), 1.0F)
                     .statusEffect(new StatusEffectInstance(StatusEffects.FIRE_RESISTANCE, 200, 10), 1.0F)
                     .statusEffect(new StatusEffectInstance(SpectrumStatusEffects.DENSITY, 200, 20), 1.0F)
-                    .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 100, 100), 1.0F)
+                    .statusEffect(new StatusEffectInstance(StatusEffects.HUNGER, 100, 120), 1.0F)
                     .build())));;
 
     public static final Item BEDROCKIUM_CRYSTAL_SEEDS = registerItem("bedrockium_crystal_seeds",
