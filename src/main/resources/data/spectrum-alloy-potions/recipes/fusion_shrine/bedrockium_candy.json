@@ -2,7 +2,7 @@
   "type": "spectrum:fusion_shrine",
   "time": 480,
   "experience": 150.0,
-  "fluid": "minecraft:lava",
+  "fluid": "spectrum:liquid_crystal",
   "ingredients": [
     {
       "item": "spectrum-alloy-potions:super_awkward_potion"
