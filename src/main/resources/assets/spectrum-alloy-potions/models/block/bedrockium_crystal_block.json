@@ -1,6 +1,6 @@
 {
-  "parent": "block/cube_all",
+  "parent": "minecraft:block/cross",
   "textures": {
-    "all": "spectrum-alloy-potions:block/bedrockium_crystal_block"
+    "cross": "spectrum-alloy-potions:block/bedrockium_crystal_block_full_stage"
   }
 }

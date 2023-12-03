@@ -1,0 +1,34 @@
+{
+  "type": "spectrum:fusion_shrine",
+  "time": 480,
+  "experience": 150.0,
+  "fluid": "minecraft:lava",
+  "ingredients": [
+    {
+      "item": "spectrum-alloy-potions:super_awkward_potion"
+    },
+    {
+      "item": "spectrum-alloy-potions:bedrockium_crystal_powder"
+    }
+  ],
+  "result": {
+    "item": "spectrum-alloy-potions:bedrockium_candy"
+  },
+  "world_conditions": [
+    {
+      "type": "time_of_day",
+      "time": "midnight"
+    },
+    {
+      "type": "moon_phase",
+      "moon_phase": "full_moon"
+    }
+  ],
+  "start_crafting_effect": "weather_thunder_short",
+  "during_crafting_effects": [
+    "visual_explosions_on_shrine",
+    "nothing",
+    "visual_explosions_on_shrine"
+  ],
+  "finish_crafting_effect": "lightning_on_shrine"
+}

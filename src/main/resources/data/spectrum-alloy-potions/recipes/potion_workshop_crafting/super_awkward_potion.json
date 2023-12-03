@@ -1,0 +1,20 @@
+{
+  "type": "spectrum:potion_workshop_crafting",
+  "base_ingredient": {
+    "item": "minecraft:honey_bottle"
+  },
+  "use_up_base_ingredient": true,
+  "color": 11972050,
+  "ingredient1": {
+    "item": "spectrum:vegetal"
+  },
+  "ingredient2": {
+    "item": "minecraft:rabbit_foot"
+  },
+  "ingredient3": {
+    "item": "minecraft:emerald"
+  },
+  "result" : {
+    "item": "spectrum-alloy-potions:super_awkward_potion"
+  }
+}
