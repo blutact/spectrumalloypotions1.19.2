@@ -1,0 +1,28 @@
+{
+  "display": {
+    "icon": {
+      "item": "spectrum-alloy-potions:bedrockium_crystal"
+    },
+    "title": "Solid",
+    "description": "You got a Bedrock...Crystal?",
+    "background": "spectrum-alloy-potions:textures/block/bedrock",
+    "frame": "challenge",
+    "show_toast": true,
+    "announce_to_chat": true,
+    "hidden": true
+  },
+  "parent": "minecraft:story/smelt_iron",
+  "criteria": {
+    "requirement": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "tag": "spectrum-alloy-potions:bedrockium_crystal",
+            "count": 1
+          }
+        ]
+      }
+    }
+  }
+}

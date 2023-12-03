@@ -5,6 +5,7 @@
   },
   "use_up_base_ingredient": true,
   "color": 11972050,
+  "required_advancement": "spectrum-alloy-potions:solid",
   "ingredient1": {
     "item": "spectrum:vegetal"
   },

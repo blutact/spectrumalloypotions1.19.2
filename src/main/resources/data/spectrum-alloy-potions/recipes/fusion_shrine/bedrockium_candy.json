@@ -14,6 +14,7 @@
   "result": {
     "item": "spectrum-alloy-potions:bedrockium_candy"
   },
+  "required_advancement": "spectrum-alloy-potions:solid",
   "world_conditions": [
     {
       "type": "time_of_day",

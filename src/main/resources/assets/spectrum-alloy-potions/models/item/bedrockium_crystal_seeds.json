@@ -1,6 +1,6 @@
 {
   "parent": "item/generated",
   "textures": {
-    "layer0": "spectrum-alloy-potions:item/bedrockium_crystal"
+    "layer0": "spectrum-alloy-potions:item/bedrockium_crystal_seed"
   }
 }

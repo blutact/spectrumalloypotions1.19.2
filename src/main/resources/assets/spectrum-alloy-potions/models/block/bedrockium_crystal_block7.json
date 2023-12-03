@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cross",
+  "textures": {
+    "cross": "spectrum-alloy-potions:block/bedrockium_crystal_block7"
+  }
+}

@@ -3,6 +3,7 @@
   "ingredient": {
     "item": "spectrum-alloy-potions:bedrockium_crystal"
   },
+  "required_advancement": "spectrum-alloy-potions:solid",
   "crushedItemsPerPointOfDamage": 2,
   "experience": 100.0,
   "result" : {
