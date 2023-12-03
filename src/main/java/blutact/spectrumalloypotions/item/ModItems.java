@@ -16,6 +16,8 @@ import net.minecraft.util.registry.Registry;
 public class ModItems {
     public static final Item BEDROCKIUM_CRYSTAL = registerItem("bedrockium_crystal",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
+    public static final Item BIZZ = registerItem("bizz",
+            new Item(new FabricItemSettings().group(ItemGroup.MISC)));
 
     public static final Item BEDROCKIUM_CRYSTAL_POWDER = registerItem("bedrockium_crystal_powder",
             new Item(new FabricItemSettings().group(ItemGroup.MISC)));
